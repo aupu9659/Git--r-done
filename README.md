@@ -15,11 +15,13 @@ Milestone 1
      user set information only once, and ensure a birthday card is sent on time, every year, 
      without any further involvement from the user. At any point, the user can begin or cancel 
      the birthday card delivery service for specific people within their address book. 
-         LaziCard supplies all necessary software to store information and send email birthday cards.
+         
+	 LaziCard supplies all necessary software to store information and send email birthday cards.
      For our physical birthday card service Lazicard produces the birthday card, creates the mailing label,
      and sends these pieces to a manufacturing center where they are assembled and sent off. 
      For this project and class we are focusing on the software. Our team members act as
      the manufacturing center, when producing the physical birthday cards.
+	       
 	       LaziCard recognizes that life changes quickly. This is why our company provides an email 
      reminder one week before sending any and all birthday cards to ensure the user still 
      still wants a birthday card delivered to the contact who's birthday is approaching. Most importantly, 
