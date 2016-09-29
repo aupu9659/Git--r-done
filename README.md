@@ -6,7 +6,8 @@ Milestone 1
 2. Company/Product Name: LaziCard
 3. Vision Statement: To prevent birthdays from ever being overlooked.
 4. Description: 
-          LaziCard is an auto-generated birthday card delivery service which interfaces with the 
+         
+	 LaziCard is an auto-generated birthday card delivery service which interfaces with the 
      user through a website. This website allows the user to create a username and password so 
      they can access the website at any time. Within their account they will have an address book 
      that can store names, addresses, and birthdates of as many people as desired. Each entry in 
@@ -22,20 +23,22 @@ Milestone 1
      For this project and class we are focusing on the software. Our team members act as
      the manufacturing center, when producing the physical birthday cards.
 	       
-	       LaziCard recognizes that life changes quickly. This is why our company provides an email 
+	 LaziCard recognizes that life changes quickly. This is why our company provides an email 
      reminder one week before sending any and all birthday cards to ensure the user still 
      still wants a birthday card delivered to the contact who's birthday is approaching. Most importantly, 
      LaziCard recognizes that life moves faster than most of us can keep up. We have made it our 
      personal responsibility to ensure that remembering to send birthday cards is one less 
      thing you have to do.
 5. Motivation: 
-         Everyone likes getting a birthday card. While it’s not a high-value gift, 
+         
+	 Everyone likes getting a birthday card. While it’s not a high-value gift, 
      it shows that someone was thinking about you and cares. With that in mind, forgetting 
      someone’s birthday is always a bad feeling. It’s not that you don’t care about that 
      person, but with so much going on in your everyday life, the thought of sending a card, 
      online or physically, doesn’t always happen. LaziCard aims to help.
 6. Risks: 
-        Our company poses the risk that someone may try to store many different email addresses
+         
+	 Our company poses the risk that someone may try to store many different email addresses
      and use our annual email sending service to spam users with birthday cards. While this may
      not be the worse type of spam, to recieve a random birthday card, we are aware that there should 
      be a limit on how many birthday cards can be sent on a particular day to see that our service is not abused. 
@@ -43,7 +46,8 @@ Milestone 1
      is no way to add emails and birthdates in a 'copy-paste' manner, as a scammer would need to do. 
      The scammer would have to manually enter every address.
 7. Risk Mitigation:
-        We plan to counteract the possible abuse of our website by limiting tha at most 5 birthday cards be sent 
+        
+	We plan to counteract the possible abuse of our website by limiting tha at most 5 birthday cards be sent 
      per day. It is very unlikly that an individual has 5 people in thier address book that all have
      birthdays on the same day. In addition, our cards are auto-generated, so there would be 
      no benefit for a scammer to use our service to send emails to other people because the only
