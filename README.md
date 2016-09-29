@@ -40,23 +40,23 @@ Milestone 1
          
 	 Our company poses the risk that someone may try to store many different email addresses
      and use our annual email sending service to spam users with birthday cards. While this may
-     not be the worse type of spam, to recieve a random birthday card, we are aware that there should 
+     not be the worse type of spam, to receive a random birthday card, we are aware that there should 
      be a limit on how many birthday cards can be sent on a particular day to see that our service is not abused. 
-     In addition, to add a new contact the user will have to individually enter the informaiton. There
+     In addition, to add a new contact the user will have to individually enter the information. There
      is no way to add emails and birthdates in a 'copy-paste' manner, as a scammer would need to do. 
      The scammer would have to manually enter every address.
 7. Risk Mitigation:
         
-	We plan to counteract the possible abuse of our website by limiting tha at most 5 birthday cards be sent 
-     per day. It is very unlikly that an individual has 5 people in thier address book that all have
+	We plan to counteract the possible abuse of our website by limiting that at most 5 birthday cards be sent 
+     per day. It is very unlikely that an individual has 5 people in their address book that all have
      birthdays on the same day. In addition, our cards are auto-generated, so there would be 
      no benefit for a scammer to use our service to send emails to other people because the only
      email that can be sent will be a birthday card. There can be no embedded advertisements. If the scammer 
-     tries to advertise by sending a birthday card and signing thier name as thier company this can not 
+     tries to advertise by sending a birthday card and signing their name as their company this can not 
      be stopped, but this can be limited by the 5 card maximum birthday card per day rule. But again, getting
      a birthday card from a random company on a day that is not your birthday won't send a message
-     to use thier business, so it is unlikely that scammers will try to use our website. 
-8. Software Developmnt Methodoloyy: Agile
+     to use their business, so it is unlikely that scammers will try to use our website. 
+8. Software Development Methodology: Agile
 9. Collaboration Tool: Slack, Trello
           
          
