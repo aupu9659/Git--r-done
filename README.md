@@ -1,11 +1,11 @@
 # Git--r-done
 
 Milestone 1
+Company Name: LaziCard
 
 1. Team Name: Git -r done 
-2. Company/Product Name: LaziCard
-3. Vision Statement: To prevent birthdays from ever being overlooked.
-4. Description: 
+2. Members: Audrey Puls, Dan Schwabacher, Nicholas Montoya, Le Qin, Ruiwen Jin, Yifan Li
+3. Description: 
          
 	 LaziCard is an auto-generated birthday card delivery service which interfaces with the 
      user through a website. This website allows the user to create a username and password so 
@@ -29,6 +29,7 @@ Milestone 1
      LaziCard recognizes that life moves faster than most of us can keep up. We have made it our 
      personal responsibility to ensure that remembering to send birthday cards is one less 
      thing you have to do.
+4. Vision Statement: To prevent birthdays from ever being overlooked.
 5. Motivation: 
          
 	 Everyone likes getting a birthday card. While it’s not a high-value gift, 
@@ -56,8 +57,9 @@ Milestone 1
      be stopped, but this can be limited by the 5 card maximum birthday card per day rule. But again, getting
      a birthday card from a random company on a day that is not your birthday won't send a message
      to use their business, so it is unlikely that scammers will try to use our website. 
-8. Software Development Methodology: Agile
-9. Collaboration Tool: Slack, Trello
+8. Version Control: GitHub
+9. Software Development Methodology: Agile
+10. Collaboration Tool: Slack, Trello
           
          
 
