@@ -5,7 +5,7 @@ Milestone 1
 Company Name: LaziCard
 
 1. Team Name: Git -r done 
-2. Members: Audrey Puls, Dan Schwabacher, Nicholas Montoya, Le Qin, Ruiwen Jin, Yifan Li
+2. Members: Audrey Puls, Daniel Schwabacher, Nicholas Montoya, Le Qin, Ruiwen Jin, Yifan Li
 3. Description: 
          
 	 LaziCard is an auto-generated birthday card delivery service which interfaces with the 
