@@ -1,0 +1,13 @@
+This commit is a very barebones and ugly landing page for Lazicard. It contains 2 things, an HTML file and a CSS file (under stylesheets). I included some basic information on both of these things in case you're new to web development. 
+
+HTML Files:
+-- These are used to display content on a website.
+-- Ultimately, a web browser will render what is contained in these files.
+
+CSS Files (stylesheets):
+-- These are used to control the way content looks on a website.
+-- Things like color, font-size, centering, etc. are all handled within stylesheets.
+
+
+
+
