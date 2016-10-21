@@ -5,4 +5,9 @@ var server = http.createServer(function(req, res) {
     res.end('Hello World');
 });
 
-server.listen(8000);
+
+console.log("Local server running at port 5000");
+console.log("Press ctrl-c to stop the server");
+
+
+server.listen(5000);
