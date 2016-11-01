@@ -1,5 +1,12 @@
 db = connect("localhost:27017/lazicard");
 
+/* The commented code is what was used to generate false accounts
+ * and the uncommented code was used to generate contacts for one specific
+ * account.
+*/
+
+
+
 /*
 for (i = 1; i <= 9; i++) {
   for (j = 0; j < 10; j++){
