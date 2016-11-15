@@ -1,40 +1,50 @@
-<!-- views/profile.ejs -->
 <!doctype html>
 <html>
-<head>
-	<title>Node Authentication</title>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-	<style>
-		body 		{ padding-top:80px; word-wrap:break-word; }
-	</style>
-</head>
-<body>
-<div class="container">
+  <head>
+    <title>Lazicard</title>
+		<link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
+    <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+  </head>
+  <body>
 
-	<div class="page-header text-center">
-		<h1><span class="fa fa-anchor"></span> Profile Page</h1>
-		<a href="/logout" class="btn btn-default btn-sm">Logout</a>
-	</div>
+    <div class = "row">
+        <h3>Welcome to Lazicard, User</h3>
+    </div>
+    <div class="row">
+      <div class="large-6 medium-6 columns">
+        <div class="callout">
+          <p>Upcoming events:</p>
 
-	<div class="row">
+          <p><a href="/donate" data-open="Donate" class="alert hollow button">Donate Here !</a></p>
 
-		<!-- LOCAL INFORMATION -->
-		<div class="col-sm-6">
-			<div class="well">
-				<h3><span class="fa fa-user"></span> Local</h3>
+<!--
+          <div class="reveal" id="Donate" data-reveal>
+            <h3>WE ACCEPT ANY PAYMENT METHOD !</h3>
+          </div>
+-->
+        </div>
+      </div>
+      <div class="large-6 medium-6 columns">
+        <div class="callout">
+          <h5>Address Book</h5>
 
-					<p>
-						<strong>id</strong>: <%= user._id %><br>
-						<strong>email</strong>: <%= user.local.email %><br>
-						<strong>password</strong>: <%= user.local.password %>
-					</p>
+          <p><a href="/addcontact" data-open="exampleModal1" class="button">Add New Contact</a></p>
+					
+          </div>
+        </div>
+      </div>
 
-			</div>
-		</div>
 
-	</div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 
-</div>
-</body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/2.1.1/what-input.js"></script>
+
+  </body>
 </html>

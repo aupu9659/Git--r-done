@@ -60,6 +60,24 @@ module.exports = function(app, passport) {
 		req.logout();
 		res.redirect('/');
 	});
+
+
+	// =====================================
+	// Add New Contact =====================
+	// =====================================
+	app.get('/addcontact', function(req, res) {
+		// render the page and pass in any flash data if it exists
+		res.render('addcontact.ejs', { message: req.flash('Add Contact Message') });
+	});
+
+
+	// =====================================
+	// Donate Route +++=====================
+	// =====================================
+	app.get('/donate', function(req, res) {
+		// render the page and pass in any flash data if it exists
+		res.render('donate.ejs', { message: req.flash('Donate Message') });
+	});
 };
 
 // route middleware to make sure
