@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lazicard</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class = "row">
+        <h3>Welcome to Lazicard, User</h3>
+    </div>
+    <div class="row">
+      <div class="large-6 medium-6 columns">
+        <div class="callout">
+          <p>Upcoming events:</p>
+          <p><a data-open="Donate" class="alert hollow button">Donate Here !</a></p>
+          <div class="reveal" id="Donate" data-reveal>
+            <h3>WE ACCEPT ANY PAYMENT METHOD !</h3>
+          </div>
+        </div>
+      </div>
+      <div class="large-6 medium-6 columns">
+        <div class="callout">
+          <h5>Address Book</h5>
+
+          <p><a data-open="exampleModal1" class="button">Add New Contact</a></p>
+          <div class="reveal" id="exampleModal1" data-reveal>
+            <h2 class="text-center">Adding a new contact</h1>
+            <div class="row">
+              <div class="large-12 columns">
+                <p class="lead">Name:</p>
+                <input type="text" placeholder="Type your contact name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-4 medium-4 columns">
+                <p>Year:</p>
+                <input type="text" placeholder="Don't forget" />
+              </div>
+              <div class="large-4 medium-4 columns">
+                <p>Month:</p>
+                <select>
+                  <option value="month">January</option>
+                  <option value="month">Feburary</option>
+                  <option value="month">March</option>
+                  <option value="month">April</option>
+                  <option value="month">May</option>
+                  <option value="month">Jun</option>
+                  <option value="month">July</option>
+                  <option value="month">Auguest</option>
+                  <option value="month">September</option>
+                  <option value="month">Octuber</option>
+                  <option value="month">November</option>
+                  <option value="month">December</option>
+                </select>
+              </div>
+              <div class="large-4 medium-4 columns">
+                <p>Day:</p>
+                <input type="text" placeholder="to donate" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <p class="lead">Gender:</p>
+                <select>
+                  <option value="Gender">Male</option>
+                  <option value="month">Female</option>
+                  </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <p class="lead">Email:</p>
+                <input type="text" placeholder="Type your contact Email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <p class="lead">Home Address:</p>
+                <input type="text" placeholder="Type your contact Home Address" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <p class="lead">Chose ways of delivery:</p>
+              </div>
+              <div class="large-6 medium-6 columns">
+                <input id="physical" type="checkbox"><label for="physical">physical</label>
+              </div>
+              <div class="large-6 medium-6 columns">
+                <input id="email" type="checkbox"><label for="email">email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <p class="lead">Send:</p>
+                <select>
+                  <option value="send">Yes</option>
+                  <option value="send">No</option>
+                  </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <a class="button secondary float-left">Cancel</a>
+                <a class="button success float-right">Submit</a>
+              </div>
+            </div>
+
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="callout">
+            <a href="#" class="button">edit</a><br/>
+            <p>Patrick Dempsey</p>
+            <p>Birthday: January 13th
+          </div>
+          <div class="callout">
+            <a href="#" class="button">edit</a><br/>
+            <p>Salmon P. Chase</p>
+            <p>Birthday: January 13th
+          </div>
+          <div class="callout">
+            <a href="#" class="button">edit</a><br/>
+            <p>Tre Brooks</p>
+            <p>Birthday: January 13th
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+  </body>
+</html>

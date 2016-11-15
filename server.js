@@ -1,23 +1,42 @@
-var express = require("express");
-var app   = express();
-var path  = require("path");
+// server.js
 
-app.use(express.static(__dirname + '/public'));
+// set up ======================================================================
+// get all the tools we need
+var express  = require('express');
+var app      = express();
+var port     = process.env.PORT || 5000;
+var mongoose = require('mongoose');
+var passport = require('passport');
+var flash    = require('connect-flash');
 
-app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname + '/index.html'));
-  //__dirname : It will resolve to your project folder.
+var configDB = require('./config/database.js');
+
+// configuration ===============================================================
+mongoose.connect(configDB.url); // connect to our database
+
+require('./config/passport')(passport); // pass passport for configuration
+
+app.configure(function() {
+
+	// set up our express application
+	app.use(express.logger('dev')); // log every request to the console
+	app.use(express.cookieParser()); // read cookies (needed for auth)
+	app.use(express.bodyParser()); // get information from html forms
+
+	app.set('view engine', 'ejs'); // set up ejs for templating
+
+	// required for passport
+	app.use(express.session({ secret: 'secret' })); // session secret
+	app.use(passport.initialize());
+	app.use(passport.session()); // persistent login sessions
+	app.use(flash()); // use connect-flash for flash messages stored in session
+
 });
 
-app.get('/signup',function(req,res){
-  res.sendFile(path.join(__dirname + '/pages/signup.html'));
-});
+// routes ======================================================================
+require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
-app.get('/login',function(req,res){
-  res.sendFile(path.join(__dirname + '/pages/login.html'));
-});
-
-app.listen(5000);
-console.log("Server running on localhost:5000...");
-console.log("The server will automatically refresh when new code is added");
-console.log("Press ctrl-c to stop the server");
+// launch ======================================================================
+app.listen(port);
+console.log('Server running on localhost:' + port + '...');
+console.log('Press ctrl-c to stop server.');
