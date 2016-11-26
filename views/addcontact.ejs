@@ -1,5 +1,7 @@
-<!-- views/add_contact.ejs -->
+<!-- views/addcontact.ejs -->
+
 <!doctype html>
+<% include /functions %>
 <html>
   <head>
     <title>Lazicard</title>
@@ -56,7 +58,7 @@
       <div class="row">
         <div class="large-12 columns">
           <p class="lead">Email:</p>
-          <input type="text" placeholder="Type your contact Email" />
+          <input id="emailAddress" type="text" placeholder="Type your contact Email" />
         </div>
       </div>
       <div class="row">
@@ -67,7 +69,7 @@
       </div>
       <div class="row">
         <div class="large-12 columns">
-          <p class="lead">Chose ways of delivery:</p>
+          <p class="lead">Choose ways of delivery:</p>
         </div>
         <div class="large-6 medium-6 columns">
           <input id="physical" type="checkbox"><label for="physical">physical</label>
@@ -88,7 +90,7 @@
       <div class="row">
         <div class="large-12 columns">
           <a href="/profile" class="button secondary float-left">Cancel</a>
-          <a class="button success float-right">Submit</a>
+          <button onclick="<% testFunction() %>" class="button success float-right">Submit</button>
         </div>
       </div>
 
