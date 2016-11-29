@@ -20,3 +20,6 @@ body {
   background-color:transparent; }
 .top-bar ul {
   background-color:transparent; }
+
+  table thead {
+    background-color: #14911e;}
