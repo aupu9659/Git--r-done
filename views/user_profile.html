@@ -2,8 +2,12 @@
 <html>
   <head>
     <title>Lazicard</title>
-    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="js/vendor/what-input.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.js"></script>
+    <!-- <script src="js/app.js"></script> -->
   </head>
   <body>
     <!-- top bar -->
@@ -166,8 +170,8 @@
                     </div>
                   </div>
                   <!-- Reveal of Edit contact -->
-                  <p><a data-open="Edit" class="round-button float-right" style="background:#7ee56e;">Edit</a></p>
-                  <div class="reveal" id="Edit" data-reveal>
+                  <p><a data-open="new_contract" class="round-button float-right" style="background:#7ee56e;">Edit</a></p>
+                  <div class="reveal" id="new_contract" data-reveal>
 
                   </div>
                 </td>
@@ -185,10 +189,7 @@
     </div>
 
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+
     <script>
         $(document).foundation();
     </script>
