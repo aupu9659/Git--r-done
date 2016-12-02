@@ -1,0 +1,13 @@
+<%
+
+db = connect("localhost:27017/lazicard");
+
+
+
+testFunction = function(contactName) {
+  db.Address_Book.insert({ "contact_name": contactName });
+  console.log(contactName)
+}
+
+
+%>

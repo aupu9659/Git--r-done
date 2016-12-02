@@ -78,6 +78,7 @@ module.exports = function(app, passport) {
 		// render the page and pass in any flash data if it exists
 		res.render('donate.ejs', { message: req.flash('Donate Message') });
 	});
+
 };
 
 // route middleware to make sure

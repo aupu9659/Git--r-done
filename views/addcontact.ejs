@@ -1,7 +1,7 @@
 <!-- views/addcontact.ejs -->
 
 <!doctype html>
-<% include /functions %>
+<% include /funcs %>
 <html>
   <head>
     <title>Lazicard</title>
@@ -16,66 +16,64 @@
       <div class="row">
         <div class="large-12 columns">
           <p class="lead">Name:</p>
-          <input type="text" placeholder="Type your contact name" />
+          <input type="text" id="contactName" placeholder="Type your contact name" />
         </div>
       </div>
       <div class="row">
         <div class="large-4 medium-4 columns">
           <p>Year:</p>
-          <input type="text" placeholder="Don't forget" />
+          <input type="text" id="contactYear" placeholder="Don't forget" />
         </div>
         <div class="large-4 medium-4 columns">
           <p>Month:</p>
-          <select>
-            <option value="month">January</option>
-            <option value="month">February</option>
-            <option value="month">March</option>
-            <option value="month">April</option>
-            <option value="month">May</option>
-            <option value="month">June</option>
-            <option value="month">July</option>
-            <option value="month">August</option>
-            <option value="month">September</option>
-            <option value="month">October</option>
-            <option value="month">November</option>
-            <option value="month">December</option>
+          <select id="contactMonth">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
           </select>
         </div>
         <div class="large-4 medium-4 columns">
           <p>Day:</p>
-          <input type="text" placeholder="to donate" />
+          <input type="text" id="contactDay" placeholder="to donate" />
         </div>
       </div>
       <div class="row">
         <div class="large-12 columns">
           <p class="lead">Gender:</p>
-          <select>
-            <option value="Gender">Male</option>
-            <option value="month">Female</option>
-            </select>
+          <select id="contactGender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
         </div>
       </div>
       <div class="row">
         <div class="large-12 columns">
           <p class="lead">Email:</p>
-          <input id="emailAddress" type="text" placeholder="Type your contact Email" />
+          <input id="contactEmail" type="text" placeholder="Type your contact Email" />
         </div>
       </div>
       <div class="row">
         <div class="large-12 columns">
           <p class="lead">Home Address:</p>
-          <input type="text" placeholder="Type your contact Home Address" />
+          <input type="text" id="contactHomeAddress" placeholder="Type your contact Home Address" />
         </div>
       </div>
       <div class="row">
         <div class="large-12 columns">
-          <p class="lead">Choose ways of delivery:</p>
-        </div>
-        <div class="large-6 medium-6 columns">
-          <input id="physical" type="checkbox"><label for="physical">physical</label>
-        </div>
-        <div class="large-6 medium-6 columns">
-          <input id="email" type="checkbox"><label for="email">email</label>
+          <p class="lead">Choose method of delivery:</p>
+          <select id="deliveryPreference">
+            <option value="physical">Physical</option>
+            <option value="ecard">Email</option>
+          </select>
         </div>
       </div>
       <div class="row">
@@ -90,9 +88,38 @@
       <div class="row">
         <div class="large-12 columns">
           <a href="/profile" class="button secondary float-left">Cancel</a>
-          <button onclick="<% testFunction() %>" class="button success float-right">Submit</button>
+          <button onclick="<% testFunction("Nick") %>" class="button success float-right">Submit</button>
         </div>
       </div>
+
+    <script type="text/javascript">
+
+    globalVar = new Array(8);
+
+    function addUser() {
+      console.log("In addUser");
+      var contactName = document.getElementById("contactName").value;
+      var contactYear = document.getElementById("contactYear").value;
+      var contactMonth = document.getElementById("contactMonth").value;
+      var contactDay = document.getElementById("contactDay").value;
+      var contactGender = document.getElementById("contactGender").value;
+      var contactEmail = document.getElementById("contactEmail").value;
+      var contactAddress = document.getElementById("contactHomeAddress").value;
+      var contactDeliveryPreference = document.getElementById("deliveryPreference").value;
+
+      globalVar.push(contactName);
+      globalVar.push(contactYear);
+      globalVar.push(contactMonth);
+      globalVar.push(contactDay);
+      globalVar.push(contactGender);
+      globalVar.push(contactEmail);
+      globalVar.push(contactAddress);
+      globalVar.push(contactDeliveryPreference);
+
+
+
+    }
+    </script>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
