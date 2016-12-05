@@ -2,15 +2,31 @@
 <html>
   <head>
     <title>Lazicard</title>
-    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="js/vendor/what-input.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.js"></script>
+    <!-- <script src="js/app.js"></script> -->
   </head>
   <body>
-
-    <div class = "row">
-        <h3>Welcome to Lazicard, User</h3>
+    <!-- top bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu">
+          <li class ="round-button">AP</li>
+          <li class="menu-text">Audrey Puls </li>
+        </ul>
+      </div>
     </div>
+    <!-- center Logo  -->
+    <img class="float-center" src="Capture1.PNG" height="150" width="430">
+    <!-- French script MTd -->
+
+    <!-- main frame -->
     <div class="row">
+
+      <!-- Left frame: upcoming events -->
       <div class="large-6 medium-6 columns">
         <div class="callout">
           <p>Upcoming events:</p>
@@ -20,12 +36,14 @@
           </div>
         </div>
       </div>
+
+      <!-- Contacts edit -->
       <div class="large-6 medium-6 columns">
         <div class="callout">
-          <h5>Address Book</h5>
-
-          <p><a data-open="exampleModal1" class="button">Add New Contact</a></p>
-          <div class="reveal" id="exampleModal1" data-reveal>
+          <h5 class="text-center">Address Book</h5>
+          <!-- Reveal for Adding new contract -->
+          <p><a data-open="new_contract" class="button">Add New Contact</a></p>
+          <div class="reveal" id="new_contract" data-reveal>
             <h2 class="text-center">Adding a new contact</h1>
             <div class="row">
               <div class="large-12 columns">
@@ -66,7 +84,7 @@
                 <select>
                   <option value="Gender">Male</option>
                   <option value="month">Female</option>
-                  </select>
+                </select>
               </div>
             </div>
             <div class="row">
@@ -107,38 +125,71 @@
                 <a class="button success float-right">Submit</a>
               </div>
             </div>
-
-
+            <!-- Close button for Reveal -->
             <button class="close-button" data-close aria-label="Close modal" type="button">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+          <!-- End of Reveal -->
 
-          <div class="callout">
-            <a href="#" class="button">edit</a><br/>
-            <p>Patrick Dempsey</p>
-            <p>Birthday: January 13th
-          </div>
-          <div class="callout">
-            <a href="#" class="button">edit</a><br/>
-            <p>Salmon P. Chase</p>
-            <p>Birthday: January 13th
-          </div>
-          <div class="callout">
-            <a href="#" class="button">edit</a><br/>
-            <p>Tre Brooks</p>
-            <p>Birthday: January 13th
-          </div>
-          </div>
+          <!-- Contacts Table -->
+          <table>
+            <thead>
+              <tr>
+                <th width="100">Recipient</th>
+                <th width="350">Information</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nick Montoya</td>
+                <td>
+                  <p>Email address:</p>
+                  <p>Physical address:</p>
+                  <p>Birthdate:</p>
+                  <div class="row">
+                    <div class="large-5 columns">
+                      <p>Delivery Methods:</p>
+                    </div>
+                    <div class="large-4 columns">
+                      <input id="physical" type="checkbox"><label for="physical">physical</label>
+                    </div>
+                    <div class="large-3 columns">
+                      <input id="email" type="checkbox"><label for="email">email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="large-5 columns">
+                      <p>Repeat Service:</p>
+                    </div>
+                    <div class="large-4 columns">
+                      <input id="Yes" type="checkbox"><label for="Yes">Yes</label>
+                    </div>
+                    <div class="large-3 columns">
+                      <input id="No" type="checkbox"><label for="No">No</label>
+                    </div>
+                  </div>
+                  <!-- Reveal of Edit contact -->
+                  <p><a data-open="new_contract" class="round-button float-right" style="background:#7ee56e;">Edit</a></p>
+                  <div class="reveal" id="new_contract" data-reveal>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Dan Schwabacher</td>
+                <td>lalalalalala</td>
+              </tr>
+            </tbody>
+          </table>
+
+
         </div>
       </div>
     </div>
 
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+
     <script>
         $(document).foundation();
     </script>
